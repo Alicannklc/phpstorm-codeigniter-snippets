@@ -1,6 +1,6 @@
 
 # Phpstorm CodeIgniter Snippets
-
+![](images/codeigniter-snippets.gif)
 
 ## Snippets Table
 |Prefix|description|
