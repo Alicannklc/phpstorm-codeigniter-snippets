@@ -1,0 +1,489 @@
+<templateSet group="Codeigniter-Snippets">
+  <template name="valid_ip" value="$this-&gt;input-&gt;valid_ip('$END$')" description="CI - Valid IP" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="user_agent" value="$this-&gt;input-&gt;user_agent()" description="CI - Get user agent" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="uri_segment" value="$this-&gt;uri-&gt;segment($END$)" description="CI - URI Segment" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="upload" value="$config['upload_path'] = './uploads/';&#10;$config['allowed_types'] = 'gif|jpg|png';&#10;$config['max_size']  = '100';&#10;$config['max_width']  = '1024';&#10;$config['max_height']  = '768';&#10;&#10;$this-&gt;load-&gt;library('upload', $config);&#10;&#10;if ( ! $this-&gt;upload-&gt;do_upload()){&#10;&#9;$error = array('error' =&gt; $this-&gt;upload-&gt;display_errors());&#10;}&#10;else{&#10;&#9;$data = array('upload_data' =&gt; $this-&gt;upload-&gt;data());&#10;&#9;echo &quot;success&quot;;&#10;}&#10;" description="CI - Upload" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="unit_run" value="$this-&gt;unit-&gt;run(&#10;&#9;$result = $ITERABLE$,&#10;&#9;$expected = TRUE,&#10;&#9;'',&#10;&#9;\htmlentities($result).' == '. \htmlentities($expected)&#10;);&#10;$END$&#10;" description="CI - Unit Run" toReformat="true" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="th" value="$this-&gt;" description="PHP - $this or other object use" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="site" value="site_url('$END$')" description="CI - URL Helper - site_url" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="set_json" value="$this-&gt;output-&gt;set_content_type('application/json');" description="CI - Set content type to json" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="set_flashdata" value="$this-&gt;session-&gt;set_flashdata('$ITERABLE$', 'value');" description="CI - Set flashdata" toReformat="true" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="set_cookie" value="$this-&gt;input-&gt;set_cookie('name', 'value', 'expire', 'domain', 'path','prefix', 'secure');" description="CI - Set Cookie" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="session_userdata" value="$this-&gt;session-&gt;userdata('$END$');" description="CI - Session - Retrieving Session Data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="session_unset_userdata" value="$this-&gt;session-&gt;unset_userdata('$END$');" description="CI - Session - Removing Session Data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="session_set_userdata" value="$array = array(&#10;&#9;'key' =&gt; 'value'&#10;);&#10;&#10;$this-&gt;session-&gt;set_userdata( $array );" description="CI - Session - Adding Custom Session Data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="session_sess_destroy" value="$this-&gt;session-&gt;sess_destroy();" description="CI - Session - Destroying a Session" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="session_all_userdata" value="$this-&gt;session-&gt;all_userdata();" description="CI - Session - Retrieving All Session Data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_server" value="$this-&gt;input-&gt;server('$END$');&#10;" description="CI - $_SERVER" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="run_validation" value="$this-&gt;form_validation-&gt;run();" description="CI - Run form validation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="request_headers" value="$this-&gt;input-&gt;request_headers();" description="CI - Request Headers" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="redirect" value="redirect('$END$','refresh');" description="CI - URL Helper - redirect" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_redirect" value="redirect('$END$','location',);" description="CI - URL Helper - redirect with response code" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_post" value="$this-&gt;input-&gt;post('$END$');" description="CI - $_POST" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pagination" value="$this-&gt;load-&gt;library('pagination');&#10;&#10;$config['base_url'] = 'url';&#10;$config['total_rows'] = 100;&#10;$config['per_page'] = 10;&#10;$config['uri_segment'] = 3;&#10;$config['num_links'] = 3;&#10;$config['full_tag_open'] = '&lt;p&gt;';&#10;$config['full_tag_close'] = '&lt;/p&gt;';&#10;$config['first_link'] = 'First';&#10;$config['first_tag_open'] = '&lt;div&gt;';&#10;$config['first_tag_close'] = '&lt;/div&gt;';&#10;$config['last_link'] = 'Last';&#10;$config['last_tag_open'] = '&lt;div&gt;';&#10;$config['last_tag_close'] = '&lt;/div&gt;';&#10;$config['next_link'] = '&amp;gt;';&#10;$config['next_tag_open'] = '&lt;div&gt;';&#10;$config['next_tag_close'] = '&lt;/div&gt;';&#10;$config['prev_link'] = '&amp;lt;';&#10;$config['prev_tag_open'] = '&lt;div&gt;';&#10;$config['prev_tag_close'] = '&lt;/div&gt;';&#10;$config['cur_tag_open'] = '&lt;b&gt;';&#10;$config['cur_tag_close'] = '&lt;/b&gt;';&#10;&#10;$this-&gt;pagination-&gt;initialize($config);&#10;&#10;echo $this-&gt;pagination-&gt;create_links();" description="CI - Pagination Boilerplate" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="output_profiler" value="$this-&gt;output-&gt;enable_profiler($END$);" description="CI - Enable Profiler" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="output_json" value="$this-&gt;output-&gt;set_content_type('application/json')-&gt;set_output(json_encode($END$json));" description="CI - output Json" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="model" value="defined('BASEPATH') OR exit('No direct script access allowed');&#10;&#10;class $END$ extends CI_Model {&#10;&#10;&#9;&#10;&#10;}&#10;&#10;/* End of file $END$.php */" description="CI - Base Model" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="migration" value="defined('BASEPATH') OR exit('No direct script access allowed');&#10;&#10;class $END$ extends CI_Migration {&#10;&#10;&#9;public function __construct()&#10;&#9;{&#10;&#9;&#9;$this-&gt;load-&gt;dbforge();&#10;&#9;&#9;$this-&gt;load-&gt;database();&#10;&#9;}&#10;&#10;&#9;public function up() {&#10;&#9;&#9;&#10;&#9;}&#10;&#10;&#9;public function down() {&#10;&#9;&#9;&#10;&#9;}&#10;&#10;}&#10;&#10;/* End of file $END$.php */&#10;" description="CI - Base Migration" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="log1" value="log_message('$END$','message');" description="Log Message" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="load_view" value="$this-&gt;load-&gt;view('$END$', $data, FALSE);" description="CI - Load View" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="load_module" value="$this-&gt;load-&gt;module('$END$');" description="HMVC CI - Load Module Controller" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="load_model" value="$this-&gt;load-&gt;model('$END$');" description="CI - Load Model" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="load_library" value="$this-&gt;load-&gt;library('$END$', $config);" description="CI - Load Library" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="load_helper" value="$this-&gt;load-&gt;helper('$END$');" description="CI - Load Helper File" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="library" value="&#10;defined('BASEPATH') OR exit('No direct script access allowed');&#10;&#10;class $END$&#10;{&#10;&#9;protected $ci;&#10;&#10;&#9;public function __construct()&#10;&#9;{&#10;&#9;&#9;$this-&gt;ci =&amp; get_instance();&#10;&#9;}&#10;&#10;&#9;&#10;&#10;}&#10;&#10;/* End of file $END$.php */" description="CI - New Library" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="is_cli" value="$this-&gt;input-&gt;is_cli_request($END$)" description="CI - Is CLI request" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="is_ajax" value="$this-&gt;input-&gt;is_ajax_request($END$)" description="CI - Is ajax request" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ip_address" value="$this-&gt;input-&gt;ip_address($END$);" description="CI - Get ip address" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="get_request_header" value="$this-&gt;input-&gt;get_request_header($END$);" description="CI - Get request header" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_get_post" value="$this-&gt;input-&gt;get_post('$END$');" description="CI - $_GET / $_POST" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="get_instance" value="$CI =&amp; get_instance();" description="CI - Assign the CodeIgniter object to a variable" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_get" value="$this-&gt;input-&gt;get('$END$')" description="CI - $_GET" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="generate_table" value="$this-&gt;load-&gt;library('$END$');&#10;&#10;$data = array(&#10;&#9;array('name', 'Color', 'Size'),&#10;&#9;array('Fred', 'Blue', 'Small'),&#10;&#9;array('Mary', 'Red', 'Large'),&#10;&#9;array('John', 'Green', 'Medium')&#10;);&#10;&#10;echo $this-&gt;$END$-&gt;generate($data);" description="CI - Generate Table" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_validation_sv" value="$this-&gt;form_validation-&gt;set_value('$END$')" description="CI - Form Validation Set Value" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_validation_run" value="if ($this-&gt;form_validation-&gt;run() == TRUE or FALSE) {&#10;&#9;# code...&#10;} else {&#10;&#9;# code...&#10;}" description="CI - Form Validation Run" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_validation" value="$this-&gt;form_validation-&gt;set_rules('fieldname', 'fieldlabel', 'trim|required|min_length[5]|max_length[12]');" description="CI - Form Validation Rule" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_upload" value="form_upload('$END$');" description="CI - Form Helper - Upload Field" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_textarea" value="form_textarea('name', 'value', 'attributs');" description="CI - Form Helper - Text Area" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_submit" value="form_submit('name', 'value');" description="CI - Form Helper - Submit" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_password" value="form_password('name', 'value');" description="CI - Form Helper - Password Field" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_open" value="form_open('url', '', $hidden);" description="CI - Form Open" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_label" value="form_label('What is your Name', 'username', $attributes);" description="CI - Form Helper - Label" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_input" value="form_input('name', 'value', $attributes);" description="CI - Form Helper - Input Field" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_hidden" value="form_hidden('name', 'value');" description="CI - Form Helper - Hidden Field" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_dropdown" value="form_dropdown('$END$', options, 'default');" description="CI - Form Helper - Dropdown" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_close" value="form_close();" description="CI - Form Helper - Close" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="form_checkbox" value="form_checkbox(name, value, TRUE);" shortcut="TAB" description="CI - Form Helper - Checkbox" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="flashdata" value="$this-&gt;session-&gt;flashdata('$END$');" description="CI - Flashdata" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fetch_module" value="$this-&gt;router-&gt;fetch_module($END$);" description="CI - Fetch Module" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fetch_method" value="$this-&gt;router-&gt;fetch_method();" description="CI - Fetch Method" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fetch_class" value="$this-&gt;router-&gt;fetch_class();" description="CI - Fetch Class" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="email" value="$this-&gt;load-&gt;library('email');&#10;&#10;$this-&gt;email-&gt;from('email@email.com', 'Name');&#10;$this-&gt;email-&gt;to('someone@example.com');&#10;$this-&gt;email-&gt;cc('another@example.com');&#10;$this-&gt;email-&gt;bcc('and@another.com');&#10;&#10;$this-&gt;email-&gt;subject('subject');&#10;$this-&gt;email-&gt;message('message');&#10;&#10;$this-&gt;email-&gt;send();&#10;&#10;echo $this-&gt;email-&gt;print_debugger();" description="CI - Email Boilerplate" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="echopre" value="echo &quot;&lt;pre&gt;&quot;;&#10;print_r ($END$);&#10;echo &quot;&lt;/pre&gt;&quot;;&#10;" description="Pre tag in echo" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="display_cart" value="echo form_open('path/to/controller/update/function'); ?&gt;&#10;&#10;&lt;table cellpadding=&quot;6&quot; cellspacing=&quot;1&quot; style=&quot;width:100%&quot; border=&quot;0&quot;&gt;&#10;&#10;&lt;tr&gt;&#10;&#9;&lt;th&gt;QTY&lt;/th&gt;&#10;&#9;&lt;th&gt;Item Description&lt;/th&gt;&#10;&#9;&lt;th style=&quot;text-align:right&quot;&gt;Item Price&lt;/th&gt;&#10;&#9;&lt;th style=&quot;text-align:right&quot;&gt;Sub-Total&lt;/th&gt;&#10;&lt;/tr&gt;&#10;&#10;&lt;?php $i = 1; ?&gt;&#10;&#10;&lt;?php foreach ($this-&gt;cart-&gt;contents() as $items): ?&gt;&#10;&#10;&#9;&lt;?php echo form_hidden($i.'[rowid]', $items['rowid']); ?&gt;&#10;&#10;&#9;&lt;tr&gt;&#10;&#9;&#9;&lt;td&gt;&lt;?php echo form_input(array('name' =&gt; $i.'[qty]', 'value' =&gt; $items['qty'], 'maxlength' =&gt; '3', 'size' =&gt; '5')); ?&gt;&lt;/td&gt;&#10;&#9;&#9;&lt;td&gt;&#10;&#9;&#9;&lt;?php echo $items['name']; ?&gt;&#10;&#10;&#9;&#9;&#9;&lt;?php if ($this-&gt;cart-&gt;has_options($items['rowid']) == TRUE): ?&gt;&#10;&#10;&#9;&#9;&#9;&#9;&lt;p&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;?php foreach ($this-&gt;cart-&gt;product_options($items['rowid']) as option_name =&gt; option_value): ?&gt;&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;strong&gt;&lt;?php echo option_name; ?&gt;:&lt;/strong&gt; &lt;?php echo option_value; ?&gt;&lt;br /&gt;&#10;&#10;&#9;&#9;&#9;&#9;&#9;&lt;?php endforeach; ?&gt;&#10;&#9;&#9;&#9;&#9;&lt;/p&gt;&#10;&#10;&#9;&#9;&#9;&lt;?php endif; ?&gt;&#10;&#10;&#9;&#9;&lt;/td&gt;&#10;&#9;&#9;&lt;td style=&quot;text-align:right&quot;&gt;&lt;?php echo $this-&gt;cart-&gt;format_number($items['price']); ?&gt;&lt;/td&gt;&#10;&#9;&#9;&lt;td style=&quot;text-align:right&quot;&gt;$&lt;?php echo this-&gt;cart-&gt;format_number(items['subtotal']); ?&gt;&lt;/td&gt;&#10;&#9;&lt;/tr&gt;&#10;&#10;&lt;?php $i++; ?&gt;&#10;&#10;&lt;?php endforeach; ?&gt;&#10;&#10;&lt;tr&gt;&#10;&#9;&lt;td colspan=&quot;2&quot;&gt; &lt;/td&gt;&#10;&#9;&lt;td class=&quot;right&quot;&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;&#10;&#9;&lt;td class=&quot;right&quot;&gt;$&lt;?php echo $this-&gt;cart-&gt;format_number($this-&gt;cart-&gt;total()); ?&gt;&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&#10;&lt;/table&gt;&#10;&#10;&lt;p&gt;&lt;?php echo form_submit('', 'Update your Cart'); ?&gt;&lt;/p&gt;" description="CI - Simple Cart Template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_where" value="$this-&gt;db-&gt;where('Field / comparison', $Value);" description="CI - Active Record DB Where" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_update" value="$this-&gt;db-&gt;update('Table', $object);" description="CI - Active Record DB Update" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_truncate" value="$this-&gt;db-&gt;truncate('Table');" description="CI - Active Record Truncate Table" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_select" value="$this-&gt;db-&gt;select('field1, field2');" description="CI - Active Record DB Select" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_row_array" value="$Var-&gt;row_array();" description="CI - Active Record DB Row Array" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_row" value="$Var-&gt;row();" description="CI - Active Record DB Row" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_result_array" value="$Var-&gt;result_array();" description="CI - Active Record DB Result Array" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_result" value="$Var-&gt;result();" description="CI - Active Record DB Result" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_order" value="$this-&gt;db-&gt;order_by('title', 'desc');" description="CI - Active Record DB Order By" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_num_rows" value="$Var-&gt;num_rows();" description="CI - Active Record DB Num Rows" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_num_fields" value="$Var-&gt;num_fields();" description="CI - Active Record DB Num Fields" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_limit" value="$this-&gt;db-&gt;limit(num);" description="CI - Active Record DB Helper Functions" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_last" value="$this-&gt;db-&gt;last_query($END$);" description="CI - Active Record DB Helper Functions" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_join" value="$this-&gt;db-&gt;join('Table', 'table.column = table.column', 'left');" description="CI - Active Record DB Join" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_insert_id" value="$this-&gt;db-&gt;insert_id($END$);" description="CI - Active Record DB Last Inserted Id" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_insertbatch" value="$this-&gt;db-&gt;insert_batch('Table', $object);" description="CI - Active Record DB Insert Batch" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_insert" value="$this-&gt;db-&gt;insert('Table', $object);" description="CI - Active Record DB Insert" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_group" value="$this-&gt;db-&gt;group_by('title');" description="CI - Active Record DB Group By" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_get" value="$this-&gt;db-&gt;get('Table', limit, offset);" description="CI - Active Record DB Get" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_from" value="$this-&gt;db-&gt;from('Table');" description="CI - Active Record DB From&quot;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_free_result" value="$Var-&gt;free_result();" description="CI - Active Record DB Free Result" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_delete" value="$this-&gt;db-&gt;delete('Table');" description="CI - Active Record DB Delete" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="db_affected" value="$this-&gt;db-&gt;affected_rows($END$);" description="CI - Active Record DB Affected Rows" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="crud" value="defined('BASEPATH') OR exit('No direct script access allowed');&#10;&#10;class Controllername extends CI_Controller {&#10;&#10;&#9;public function __construct()&#10;&#9;{&#10;&#9;&#9;parent::__construct();&#10;&#9;&#9;//Load Dependencies&#10;&#10;&#9;}&#10;&#10;&#9;// List all your items&#10;&#9;public function index( $offset = 0 )&#10;&#9;{&#10;&#10;&#9;}&#10;&#10;&#9;// Add a new item&#10;&#9;public function add()&#10;&#9;{&#10;&#10;&#9;}&#10;&#10;&#9;//Update one item&#10;&#9;public function update( $id = NULL )&#10;&#9;{&#10;&#10;&#9;}&#10;&#10;&#9;//Delete one item&#10;&#9;public function delete( $id = NULL )&#10;&#9;{&#10;&#10;&#9;}&#10;}&#10;&#10;/* End of file Controllername.php */" description="CI - Simple CRUD Controller" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_cookie" value="$this-&gt;input-&gt;cookie()('name');" description="CI - Cookie" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="controller" value="defined('BASEPATH') OR exit('No direct script access allowed');&#10;&#10;class Controllername extends CI_Controller {&#10;&#10;&#9;public function index()&#10;&#9;{&#10;&#9;&#9;&#10;&#9;}&#10;&#10;}&#10;&#10;/* End of file Controllername.php */" description="CI - Base Controller" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="construct" value="public function __construct()&#10;{&#10;&#9;parent::__construct();&#10;&#10;&#9;//Do your magic here$END$&#10;}" description="CI - Class Constructor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ci_start" value="defined('BASEPATH') OR exit('No direct script access allowed');&#10;&#10;&#10;&#10;/* End of file filename.php */" description="CI - Generic Starter Class" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ciline" value="// ------------------------------------------------------------------------&#10;" description="ciline" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="eof" value="/* End of file filename.php */&#10;&#10;" description="CI - End of file" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cart_update" value="$data = array(&#10;&#9;'rowid' =&gt; 'yourid',&#10;&#9;'qty'   =&gt; 3&#10;);&#10;&#10;$this-&gt;cart-&gt;update($data);" description="CI - Update Cart" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cart_add" value="$data = array(&#10;&#9;'id'      =&gt; 'sku_123ABC',&#10;&#9;'qty'     =&gt; 1,&#10;&#9;'price'   =&gt; '19.56',&#10;&#9;'name'    =&gt; 'T-Shirt',&#10;&#9;'options' =&gt; array('Size' =&gt; 'L', 'Color' =&gt; 'Red')&#10;);&#10;&#10;$this-&gt;cart-&gt;insert($data);" description="CI - Add to Cart" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="calendar" value="$this-&gt;load-&gt;library('calendar');&#10;&#10;$data = array(&#10;&#9;'day'  =&gt; 'link',&#10;&#9;'day'  =&gt; 'link'&#10;);&#10;&#10;echo $this-&gt;calendar-&gt;generate(year, month, $data);" description="CI - Calendar Helper" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ci_base" value="base_url('$END$')" description="CI - URL Helper - base_url" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="anchor" value="anchor('url', 'linkname', 'attributes');" description="CI - Anchor Helper" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
