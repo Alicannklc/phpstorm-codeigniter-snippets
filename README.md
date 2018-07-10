@@ -1,5 +1,7 @@
 
 # Phpstorm CodeIgniter Snippets
+Plugin url: https://plugins.jetbrains.com/plugin/10916
+
 ![](images/codeigniter-snippets.gif)
 
 ## Snippets Table
