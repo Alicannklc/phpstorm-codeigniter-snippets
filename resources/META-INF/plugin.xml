@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.alicannklc.codeigniter.snippets</id>
   <name>Codeigniter Snippets</name>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <vendor email="alicannklc@gmail.com">Alicannklc</vendor>
 
   <description><![CDATA[
